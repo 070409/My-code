@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> CSS 3 bagian 3 </title>
+<style>
+ div{
+  width:100px;
+  height:100px;
+   margin-bottom:5px;
+  } 
+  #ha1{
+   background:grey;
+  transform:rotateX(45deg);
+  }
+    #ha{
+   perspective:50px;
+  perspective-origin:50% 20%;
+  }<!-- perspective dapat membuat pandangan kita terhadap suatu bentuk menjadi 3d,dengan pengaturan x dan y(sesuai koordinat mtk) -->
+	#han3{
+	background:red;
+	transform: translateZ(1px);
+	transition: transform 2s;
+	}
+	
+	#han3:hover{
+	transform: translateZ(10px);
+	}
+
+</style>
+</head>
+<body>
+<h1>PERSPECTIVE</h1>
+<div id="ha">
+<div id="ha1"></div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+<h1>3D TRANSLATE DAN ROTATE</h1>
+<div id="han2">
+<div id="han3"></div>
+</div>
+</body>
+</html>

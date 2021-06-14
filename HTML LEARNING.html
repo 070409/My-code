@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html> <!-- ini adalah tag untuk menyatakan bahwa ini adalah html-->
+<head>  <!-- tag yang berisi informasi mengenai judul/nama website kita-->
+<title> My website </title> <!--title adalah judul jadi di html ada 2 tag yaitu pembuka dan penutup,seperti kurung kurawal di c++-->
+<style>
+  h1{
+    color:green;
+  }
+</style><!-- ini aalah CSS internal berfungsi untuk mengubah bagian header yg kita pilih alias h,disini h1 adalah judul teks,sehingga judul akan di ubah warnanya -->
+
+<link rel="stylesheet" href="style.css"> <!-- berfungsi untuk menghubungkan file CSS dengan file HTML,disini saya buat isi file CSSnya adalah untuk mengubah h2 menjadi warna merah -->
+
+
+</head>
+<!--CSS -->
+
+<!-- 1.Inline:menulis tag langsung pada tag HTML nya -->
+<!-- internal:menuliskan kode CSS tdk pada tag HTML,namun masih pada file HTML itu sendiri/yang sama,diletakkan pada head -->
+<!-- eksternal: Kita membuat file CSS sendiri -->
+  <body> <!--body adalah bagian dari isi website,alias bagian yang terkadung pada teks,atau apapun pada website-->
+
+    <h1> Alvin Lim </h1> <!--h adalah header,1 adalah urutan header,semakin besar urutan header,maka semakin kecil pula tulisan header, header digunakan untuk menampilkan judul teks pada website,berbeda dengan Body,header mempunyai tulisan yang lebih tebal,karena dia adalah judul teks-->
+    <h2>PUNTEN MAMANK</h2>
+<p id="text_panjang"><b> Selamat datang di website Alvin, <span>silahkan liat liat apa yang ada yang disini</span></b> <br><div id="kata_kata">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Selamat melihat-lihat </div></p>    <!-- p untuk membuat paragraf,br disini adalah enter,div disini berfungsi untuk merapikan teks,b adalah bold,span berfungsi agar bagian yang dibuat span dapat menjadi inline-->
+<a href="https://www.instagram.com"style="color:blue"> Ini Instagram    </a> <!-- style=color:blue,ini adalah CSS inline,terletak pada suatu baris,disini untuk membuat CSS harus menggunakan style="",color untuk mengubah warna tulisan,kemudian ketik angka yang kita inginkan, a href ini untuk menyatakan link yang akan dibuka,misal disini youtube,maka tulis link Youtube,href=""berfungsi untuk membuat link yang akan dibuka dan tulis linknya di tanda kutip/petik,dan ditengah adalah nama linknya di website kita-->
+<form>
+  <fieldset>
+    <legend>Silahkan di isi</legend>
+  <label for="Nama_User">Nama</label><!--Label berfungsi sebagai penunjuk atau pesan,seperti deskripsi isian-->
+  <input type="Silahkan mengetik"placeholder="Mengetik"value="Silahkan mengetik"id="Nama_User"><div><br><!-- input type adalah bentuk untuk menampilkan kotak isian yg hanya dapat diketik pada satu baris,placeholder untuk menampilkan suatu ketikan ketika isian kita kosong,value berfungsi untuk menyediakan ketikan ketika kita mau mengetik sesuatu,id disini berfungsi sebagai penghubung antara Label dengan input type,agar jika diklik maka akan menuju isian -->
+    <label for="Pesan_user">Pesan saya adalah...</label><!--Label berfungsi sebagai penunjuk atau pesan,seperti deskripsi isian-->
+  <textarea cols="100"rows="10"placeholder="Pesan saya adalah"id="Pesan_user">Pesan saya adalah </textarea><!-- textarea berfungsi untuk membuat isian yang dapat memanjang ke bawah,dan yg pasti kita dapat membuat ketikan yang panjang dibawahnya,cols dan rows untuk mengatur ukuran,id disini berfungsi sebagai penghubung antara Label dengan textarea,agar jika diklik maka akan menuju isian-->
+
+
+    </fieldset>
+  <br><br>
+  <fieldset><!-- fieldset berfungsi untuk membuat kotak agar tampilan pada isian lebih rapi -->
+    <legend>Ayo di isi</legend><!--legend dapat dikatakan sebagai petunjuk yang mengelompokkan sesuatu -->
+
+  <p>Penggagas Budi Utomo adalah...<p>
+  <input type="checkbox" name="hobi_user"value="0"checked> Dr.Wahidin Sudirohusodo<br><!--checkbox berfungsi untuk membuat piihan berbentuk petak,dan meskipuyn  di klik berkali-kali tetap bisa dihapus lagi,name dan value berfungsi untuk menampilkan plihan yang hanya dapat diklik 1 saja,namun name dibagian 1 harus sama juga dengan name di bagian 2 3 dan seterusnya,sedangkan value bebas-->
+
+  <input type="checkbox"name="hobi_user"value="1">Ir.Soekarno<br>
+    <input type="checkbox"name="hobi_user"value="2">Haji Samanhudi<br>
+    <p>Gender<p><br>
+    <input type="radio"name="gender"value="0">Laki-laki <br>
+    <input type="radio"name="gender"value="1">Perempuan <br><br><!--radio berfungsi untuk membuat piihan berbentuk bulat,dan sekali klik tak bisa dihapus lagi,name dan value berfungsi untuk menampilkan plihan yang hanya dapat diklik 1 saja,tidak dapat menghapus pilihan akan tetapi dapat mengganti pilihan,namun name dibagian 1 harus sama juga dengan name di bagian 2 3 dan seterusnya,sedangkan value bebas-->
+    <label>Silahkan pilih = </label><!-- label tanpa for dapat dibuat menjadi suatu kalimat atau kata -->
+    <select><!-- select berfungsi untuk membuat pilihan pada daftar yg dapat dibuka dan ditutup -->
+    <optgroup label="Keluarga"><!--optgroup berfungsi sebagai tulisan yg ditampilkan pada pilihan akan tetapi tidak dapat dipilih -->
+      <option value="00">Papi</option><!-- option untuk membuat sebuah opsi dengan cara membuat pilihan pada daftar yg dapat dibuka dan ditutup  -->
+      <option value="01">Mami</option>
+      <option value="02">Dede</option>
+
+    </optgroup>
+      <optgroup label="Teman">
+        <option value="000">Belinda</option>
+        <option value="0001">Dean</option>
+      </optgroup>
+    </select>
+<input type="submit" value="Submit"><!-- <input type="submit",berfungsi untuk membuat tombol submit,atau menyetujui,sedangkan value="Submit">,itu adalah tulisan yang ditampilkan pada tombol Submit -->
+  </fieldset>
+</form>
+<br>
+<div id="menu_web">           <!-- id disini digunakan untuk menyimpan variabel tapi hanya 1 saja -->
+<a href="file:///C:/Users/alvin/OneDrive/Documents/HTML%20LEARNING/HTML%20LEARNING.html"class="menu">Reload a</a><br><br> <!-- class digunakan untuk menyimpan variabel dalam jumlah banyak -->
+<a href="file:///C:/Users/alvin/OneDrive/Documents/HTML%20LEARNING/HTML%20LEARNING.html"class="menu">Reload b</a><br><br>
+<a href="file:///C:/Users/alvin/OneDrive/Documents/HTML%20LEARNING/HTML%20LEARNING.html"class="menu">Reload c</a><br><br>
+
+</div>
+<div>
+
+<a href="https://www.youtube.com" target="_blank"class="yt"> Ini Youtube    </a> <!-- disini ia akan menampilkan Youtube juga akan tetapi ia akan menakmpilkan di halaman baru,
+berbeda dengan yang biasa ia akan menampilkan dihalaman itu juga,karena ia menggunakan  target="_blank"-->
+<a href="https://www.instagram.com" target="_blank"class="yt"> Ini Instagram    </a>
+
+<img src="gambar/gambar.png.png"alt="gambarnya ini" height="100"width="100"> <!--img disini dapat menampilkangambar pada website kita,akan tetapi img hanya perlu
+ menulis 1 tag, kemudian menuliskan src,yang berfungsi untuk menampilkan gambar,dengan cara kita mengetik file
+gambar yang kita inginkan,beserta formatnya,dan untuk menampilkan gambar,gambar tersebut harus 1 folder
+dengan lokasi folder htmlnya,height dan eith disini adalah panjang dan lebar ukuran gambar,alt adalah alternatif-->
+
+
+<iframe src="https://www.pubgmobile.com/id/home.shtml"height="100"width="100">  </iframe> <!--iframe berfungsi untuk menampilkanisi link yang kita masukkan pada src,contoh disini menampilkan isi dari link pubgmobile-->
+
+
+<iframe src="https://www.w3schools.in/html-tutorial/formatting/"height="1000"width="1000">  </iframe> <!--link ini adalah link yang menampilkan cara membuat font,pada teks yang dapat kita terapkan pada website kita-->
+<table border="3"><!-- table adalah tabel dan border,adalah ukuran ketebalan tabel,alias border-->
+  <caption>Daftar Kelas</caption>
+  <tr>
+   <th>Nama</th><!--th disini berbeda dengan td karena th adalah tulisan yang dipertebal,atau menggunakan bold-->
+   <th>Kelas</th>
+  </tr>
+  <tr>
+    <td>Alvin</td><!--td disini berfungsi sebagai kata dalam tabel-->
+    <td>VIII F<td>
+  </tr><!--tr disini berfungsisebagai baris-->
+
+</table>
+
+
+<!--list pada html,ada menggunakan titik,angka,dan ada yang berbentuk judul deskripsi beserta deskripsinya-->
+
+<ul><!--untuk menyatakan list dalam bentuk titik-->
+  <li>Asep</li>
+  <li>Slamet</li>
+  <li>:v</li>
+</ul>
+<ol><!--ol untuk menyatakan list dalam bentuk angka -->
+  <li>Mata</li>
+  <li>kowe</li>
+</ol>
+<dl><!--untuk menyatakan judul deskripsi beserta deskripsinya-->
+  <dt>Alvin</dt>
+  <dd>Alvin adalah seorang anak baik yang tinggal di Dumai,<div>Ia lahir pada tanggal 9 April 2007</dd>
+  <dt>Jocelyn</dt>
+  <dd>Jocelyn adalah seorang anak baik yang tinggal di Dumai,<div>Ia lahir pada tanggal 15 Desember 2011</dd><br>
+ Ini adalah refrensi simbol =    <a href="https://www.w3schools.com/charsets/ref_utf_latin1_supplement.asp" target="_blank"> Ini &nbsp; link &nbsp; refrensinya </a><!--ini adalah referensi cara mengetik simbol atau spasi yang lebih dari sekali,dll untuk melakukan program spasi yang lebih dari sekali yaitu menggunakan &nbsp;-->
+
+
+
+
+
+
+  </body>
+
+</html>

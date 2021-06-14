@@ -1,0 +1,171 @@
+/*
+
+*{ tanda *{			} itu artinya mencakup semuanya
+	
+}
+
+*/#menu_web{
+           /* ini agar dapat menghuungkan id maka dibuatlah mengunakan hashtag #,agar dapat memanggil id */
+
+}
+
+.menu{/* KONDISI BIASA */
+
+	color:brown;                   /* ini agar dapat menghuungkan class maka dibuatlah mengunakan tanda titik . ,agar dapat memanggil class */
+	background:#fdfdfd;
+	
+}
+.menu:visited{/* ini adalah keadaan ketika link sudah dikunjungi */
+	background:yellow;
+}
+.menu:hover{/*  ini adalah keadaan ketika kursor berada di link */
+	color:#fdfdfd;
+	background:green;
+}
+.menu:active{ /*ini adalah keadaan ketika link sedang ditekan  */
+	color:green;
+	background:white;
+}
+body{
+	  /*rgb disini adalah red green blue,background warna juga dapat dibuat dengan #dfdf,ini adalah code dari warna yg terdapat pada color-hex.com */
+    background-color: #dfdfdf;
+    background-image: url("file:///C:/Users/alvin/Downloads/hai.jpeg");/* Ini berfungsi untuk membuat background gambar pada website dengan cara gambar kita ditempatkan pada web terlebih dahulu,kemudian salin website dari gambar tersebut,dan cantumkan di dalam kurung tanda petik("") */
+	background-repeat: repeat-x;/* ini untuk membyat posisi mengulang, x untuk menyamping,y untuk menurun */
+	background-attachment: fixed;/* background-attachment: fixed berfungsi untuk membuat gambar tr\etap diposisi yang sama tidak menghilang ke atas saat di scroll,background akan mengikuti sampai ke paling bawah*/
+	background-position: center;/* Ini berfungsi untuk membuat posisi gambar apakah di atas tengah, bawah tengah, kiri tengah, kanan tengah, kanan atas, kanan bawah, kiri atas, kiri bawah apabila gambar tidak di repeat maka ketika kita buat posisi kanan saja,maka ia akan otomatis mengambil kanan tengah,apabila kita buat kanan atas,maka posisinya akan ada di kanan atas */
+}
+
+a{
+	display:block; /*Block berfungsi untuk membuat enter pada masing-masing tulisan/teks/kata/huruf/link, Block merupakan jenis teks yang langsung enter semua dan mengarah ke bawah */
+}
+
+
+h1{
+	font-size:150px;
+	font-family:Times-New-Roman;/* Ini berfungsi untuk menentukan jenis tulisan */
+	color:#3cff00;
+	text-align: center;/* Ini berfungsi untuk mengatur posisi tulisan/teks */
+	text-decoration: overline;/* Ini berfungsi untuk menghias teks,alias tambahan pada teks,seperti garis bawah,bahkan garis atas */
+	letter-spacing:50px;/* letter-spacing berfungsi untuk memberikan jarak pada setiap huruf	*/
+	line-height:100px;
+	background:white;
+	
+	
+}
+#kata_kata{
+	margin-bottom:50px;/* ini berfungsi memberi jarak pada bagian bawah teks ,sehingga teks akan bergesr ke atas,dan memberi jarak pada bagian bawah */
+	margin-left:50px;/* ini berfungsi memberi jarak pada bagian kiri teks ,sehingga teks akan bergesr ke kanan layaknya spasi,dan memberi jarak pada bagian kiri */
+	margin-right:50px;/* ini berfungsi memberi jarak pada bagian kanan teks ,sehingga teks akan bergesr ke kiri,dan memberi jarak pada bagian kanan */
+	margin-top:50px;/* ini berfungsi memberi jarak pada bagian atas teks,sehingga teks akan ke bawah,dan memberi jarak pada bagian atas */
+	
+}
+.menu{
+	
+	display:inline-block; /* Inline itu untuk tag img,tag a, tag span.
+							 Sedangkan untuk block itu golongannya spt tag h1 h2,tag div,dll kecuali img,tag a, tag span */
+	height:100px;
+	width:100px; 
+	text-decoration:none;
+	border-width:1px;
+	border-style:solid;
+	border-color:black;
+	
+}
+h2{
+
+color:blue;
+font-size:100px;
+text-transform:lowercase;/* text-transform berfungsi untuk mengubah bentuk tex,seperti membuat tulisan menjadi guruf kapital semua,atau pun membuat semua huruf menjadi huruf nonkapital  */
+display: inline;/* Inline berfungsi untuk membuat kata menjadi sebaris,teks inline biasanya dia akan menumpuk,dan akhirnya menyamping */
+}
+
+#text_panjang{
+	text-align:justify;/* justify berfungsi untuk merapikan teks */
+	text-indent: 30 px;/* ini berfungsi untuk memberikan semacam tab */
+	line-height:100px;/* ini berfungsi untuk memberikan jarak antar baris */
+	background:red;
+	max-width:50%;/* ini berfungsi untuk menunjukkan jarak tulisan pada saat menyamping */
+	max-height:100px;/*  ini berfungsi untuk menunjukkan jarak tulisan pada saat ke atas */
+	/*visibility:hidden;                             ini untuk menutupi/menghilangkan suatu kata/kalimat,tetapi barisnya masih ada meski tidak ada tulisannya
+	display:none;                                    ini untuk menutupi/menghilangkan suatu kata/kalimat,tetapi barisnya akan dihapus sehingga ini menghapus total,karena barisnya sudah tidak ada
+	*/
+	
+	
+}
+.yt{   /* ini agar dapat menghuungkan class maka dibuatlah mengunakan tanda titik . ,agar dapat memanggil class */
+	color:brown;                  
+	background:#fdfdfd;
+	display:inline-block;
+	/*height:100px;
+	width:100px; */ 
+	text-decoration:none;
+	padding:100px;/* padding berfungsi untuk membuat tulisan menjadi ke tengah-tengah kotak,serta menyesuaikan besarnya,apabila kita buat padding saja tidak mengetik top,right,bottom,left, sesuai urutan disamping maka otomatis besar px akan s=dianggap sama semua */
+}
+
+.yt:visited{
+	background:yellow;
+}
+.yt:hover{
+	color:#fdfdfd;
+	background:green;
+}
+.yt:active{
+	color:red;
+	background:blue;
+}
+
+/* STRUKTUR DASAR CSS
+
+selektor{
+	property:nilai;
+
+/* 
+    Mengatur Posisi di CSS
+
+Posisi di CSS sbg berikut:
+1.Static(Default)=static akan otomatis ngikutin yang ada di HTML kita/tidak ada perubahan sama sekali
+2. Relative
+3. Absolute
+4. fixed
+
+Untuk 
+2. Relative
+3. Absolute
+4. fixed
+
+materinya ada di punten.css
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+

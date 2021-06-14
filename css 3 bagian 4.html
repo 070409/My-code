@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>css 3 bagian 4</title>
+<style>
+div{
+width:100px;
+	height:100px;
+	
+	   }
+	     #ha1{
+   background:grey;
+  transform:rotateX(45deg);
+  }
+    #ha{
+   perspective:50px;
+  perspective-origin:50% 20%;
+   margin-left:120px;
+  }
+  #div0{
+    perspective:100px;
+  perspective-origin:60% 10%;
+  margin-left:20px;
+  }
+		#div1{
+	background:red;
+	transform: translateZ(1px) rotateX(25deg);
+	transition:transform 2s;
+	border:2px solid black;
+	}
+	
+	#div1:hover{
+		transform:translateZ(10px);
+	}
+	#div5{
+	background:red;
+	 	 transform:scaleZ(1)  rotateY(45deg);
+		 transition:transform 2s;
+		 border:1px solid black;
+	}
+	#div4{
+	  perspective:100px;
+  perspective-origin:60% 10%;
+    margin-left:50px;
+  }
+  #div5:hover{
+  transform: scaleZ(1.5) rotateY(45deg);
+  }
+  #box{
+  perspective:500px;
+   perspective-origin:60% 10%;
+  }
+  #card{
+  position:relative;
+  background:blue;
+  height:200px;
+  width:200px;
+  transition:transform 2s;
+  border:1px solid black;
+transform-style: preserve-3d;
+  }
+    #al,vin{
+  position: absolute;
+  top:0px;
+  left:0px;
+  height:200px;
+  width:200px;
+  backface-visibility: hidden;
+  } 
+    #vin{
+	
+   transform: rotateY(180deg) ;
+  }
+  #card:hover{
+  transform: rotateY(180deg) ;
+  
+  }
+	#njeblos{
+	background:yellow;
+	width:150px;
+	height:150px;
+	animation-name:goyang;
+	animation-duration:2s;
+	animation-iteration-count:1000000000000000000000000;
+	animation-direction:alternate-reverse; 
+	}
+	
+	@keyframes goyang{
+	from{background:yellow;}
+	to{background:red;}
+	}
+	 <!--rotateX dan rotateY berfungsi untuk mengubah rotasi ,x untuk sisi alas segiempat(x bergerak dari atas ke bawah dan juga sebaliknya) dan y untuk sisi tegak segiempat(y bergerak dari kanan ke kiri dan juga sebaliknya) -->
+	<!--   backface-visibility: hidden; berfungsi untuk menyembunyikan tulisan yang kita buat pada #vin agar tidak saling berdempet dengan tulisan yang ada di #al,apabila tanpa ini namun transform-style: preserve-3d; sudah tertera pada code,tulisan bagian tampilan #al saja yang sudah tidak berdempet,makanya kita butuh ini agar di sebaliknya tidak berdempet  -->
+	<!--   transform-style: preserve-3d; membuat efek tulisan dapat tertulis secara timbal-balik,dan terpisah semestinya,ini mengurus bagian belakang ketika sudah melakukan hover maka tulisan tidak akan berdempet lagi,apabila tanpa ini namun sudah tertera backface-visibility: hidden;  pada code maka tulisan akan berdempet -->
+	<!-- animation-iteration-count berfungsi untuk memberikan pengulangan pada animasi,pengulangan dapat kita tentukan -->
+	<!--animation-direction berfungsi untuk menentukan perubahan warna,kali ini saya pilih alternate-reverse yang urutan warnanya sbg berikut: merah-kuning-merah-merah-kuning-merah-merah dst,apabila alternate maka ia akan merah-kuning-merah kuning dst,apabila reverse maka ia akan seperti ini merah-kuning-merah(perbedaannya dengan alternate adalah pergerakan pengulangannya kasar tanpa adanya transisi,langsung mengubah ke merah tanpa gerakan perubahan warna)-kuning-merah(perbedaannya dengan alternate adalah pergerakan pengulangannya kasar tanpa adanya transisi,langsung mengubah ke merah tanpa gerakan perubahan warna)-kuning -->
+</style>
+</head>
+<body>
+<br><br><br><br><br>
+<h1>PERSPECTIVE</h1>
+<div id="ha">
+<div id="ha1"></div>
+</div><br><br><br><br><br><br><br>
+<h1>3D TRANSLATE DAN ROTATE</h1>
+<div id="div0">
+<div id="div1"></div>
+</div><br><br><br><br>
+<h1>3D SCALE</h1>
+<div id="div4">
+<div id="div5">Div5</div>
+</div><br><br><br><br><br><br><br><br><br>
+<h1>FLIPCARD<h1>
+<div id="box">
+<div id="card">
+<div id="al">Jocelyn orangnya ramah dan ga suka marah-marah</div>
+<div id="vin">Tapi bo'ong :v</div>
+</div>
+</div><br><br><br><br><br>
+<h1>ANIMASI</h1>
+<div id="njeblos"></div>
+</body>

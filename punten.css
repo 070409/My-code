@@ -1,0 +1,85 @@
+#blok_goblok{
+/*	position:relative; 									Relative berfungsi mengatur satu teks yang dipilih 
+	top:100px;
+	left:200px; ketika membuat posisi cukup membuat kiri atau kanan,atas atau bawah,cth posisi diatur kiri(left) bawah(top),jangan kanan(right = mendorong teks ke kiri,alias dorongan dari kanan) kiri(left = mendorong teks ke kanan,alias dorongan dari kiri),karena nanti bisa tabrakan 
+	
+	
+	position:absolute;  ini dapat membuat bagian yang dipilih(#blok_goblok) tidak dianggap lagi sehingga yang dibawahnya akan naik ke atas,posisi absolute,relative tergantung dari parent element
+	top:100px;
+	left:200px;
+	
+
+
+*/
+z-index:-1;
+}
+
+#opo_iki{
+	/*position:fixed;                          							PADA POSISI FIXED TULISAN AKAN MENGIKUTI SAAT KITA SCROLL KE BAWAH,POSISI FIXED TIDAK AKAN BERGANTUNG PADA PARENT ELEMENTNYA,ALIAS BERGANTUNG PADA BROWSER,DIA TIDAK AKAN BERADA DI TEMPAT DENGAN DIAM,PARENT ELEMENT ADALAH POSISI TEXT YANG KITA ATUR DI HTML 
+background:green;	
+
+*/
+}
+#hahahah_gendheng{
+	
+/*
+
+position:fixed;                          							PADA POSISI FIXED TULISAN AKAN MENGIKUTI SAAT KITA SCROLL KE BAWAH,POSISI FIXED TIDAK AKAN BERGANTUNG PADA PARENT ELEMENTNYA,ALIAS BERGANTUNG PADA BROWSER,DIA TIDAK AKAN BERADA DI TEMPAT DENGAN DIAM,PARENT ELEMENT ADALAH POSISI TEXT YANG KITA ATUR DI HTML 
+background:green;	
+
+
+z-index:-1;                                      berfungsi membuat tulisan layaknya spt background,yang apabila discroll pada posisi fixed dia akan berjalan dibelakang tulisan yang kita buat
+	*/
+
+}
+/*#adudu_palanyapetak{
+	clear:both;										 Ini berfungsi menghilangkan efek float pada bagian setelah bagian yang terkena efek float awal,alias yang terkena efek float adalah bagian bawah sedangkan bagian atas masih terkena efek float 
+}
+table{
+	float:right;									 berfungsi untuk mengisi bagian yang kosong 
+}*/
+
+*{
+	float:left;               /* float akan lebih rapi apabila kita mengaturnya seperti ini */
+	margin:10px;
+	padding:0px;
+	width:33,333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333%;
+}
+/*Jenis-jenis selector*/
+/*halaman file */
+/*
+
+h1,h2{              bagian h1,h2 ini adalah selector,selector pada umumnya
+	color:grey;  
+	margin:10px 0;
+	
+}*/
+/*
+div > a{       selector ini mencakup segalanya yang make a{} di file html
+	background:aqua;
+}
+
+*/
+/*
+elemen1 + elemen2{            selector ini hanya akan mencakup bagian suatu element(entah div p span dan lain-lain), dan sebelum element ke-1 ada element yang sama dengan elemen ke-2,apabila element sebelumnya berbeda dengan yang ditentukan pada file html maka bagian tersebut tidak termasuk pada selector
+	background:aqua;
+}
+
+*/
+/*
+(elemen1) ~ (elemen2){              selector ini akan mencakup bagian yang elemen ke-2 yang setelahnya ada elemen ke-1 
+	background:green;
+}
+*/
+h1:hover{
+	
+	color:yellow;
+}
+a:hover + a{     /* + ini memberikan efek apabila kita berada diatas/tepat di elemen1,maka elemen ke 2 lah yang akan terkena efek  */
+	background-color:yellow;
+}
+
+
+
+
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Latihan Html</title>
+<style>
+
+#box{
+height:100px;
+width:100px;
+background：aqua;
+border-radius：10px;
+}
+
+</style>
+</head>
+<body>
+<figure>
+<img src="muka.jpeg"alt="gambar muka ku"width="200px"height="200px">
+<figcaption> Ini adalah gambar muka orang yang ngetik </figcaption>
+</figure>
+<br><br><br><br>
+<br><dialog open>
+Ini adalah penggunaan tag dialog
+
+</dialog>
+
+<details>
+ <summary>
+	Klik ini
+ </summary>
+
+<p>  Apa yang lu mau liat ha?!  </p>
+</details>
+<form>
+<input type="search"name="search"placeholder="Ayo apa yang mau dicari"><!-- Ini berfungsi untuk memberikan pencarian,akan tetapi dia tidak bisa ngesearch krn belum ada fitur searchnya -->
+<input type="email"name="email"placeholder="Silahkan ketik email yang valid"required><!-- Ini utk mengetik email -->
+<input type="url" name="url" placeholder="Berikan link yg valid" required><br>
+<input id="startdate" name="startdate" min="00-00-00" max="2021-06-11" type="date">
+<input type="tel" name="tel"placeholder="untuk memberikan nomor telepon" required>
+<input id="color" name="color" type="color"><!-- untuk memberikan warna -->
+<input type="submit">
+</form>
+<a href="https://html5doctor.com/html5-forms-input-types/"target="_blank">Ini link refrensi untuk membuat kolom email,search,number,dll</a>
+<br><br><br><br><br><br>
+<video width="500"height="500" controls poster="muka.jpeg" ><!--                   autoplay  berfungsi untuk memainkan langsung videonya tanpa kita suruh mainkan            --> <!-- poster berfungsi sbg gambar yang muncul sebelum video dimainkan --><!-- muted berfungsi mematikan suara pada video -->
+<source src="video.mp4"type="video/mp4">
+</video>
+<audio controls loop><!-- loop fungsinya mengulang secara otomatis apabila audiao ataupun video sudah habis,loop juga dapat digunakan pada video -->
+<source src="RUDE.mp3"type="audio/mp3">
+</audio>
+<div id= "box">
+
+
+</div>
+</body>
+</html>
